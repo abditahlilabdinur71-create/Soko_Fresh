@@ -12,41 +12,57 @@ const USERS_STORAGE_KEY = 'sokoFreshUsers';
 const PERSISTENT_SESSION_KEY = 'sokoFreshPersistedUser';
 const SESSION_KEY = 'sokoFreshCurrentUser';
 
-let users: AuthUser[] = JSON.parse(localStorage.getItem(USERS_STORAGE_KEY) || '[]');
+let users: AuthUser[] = [];
 
-// FIX: To resolve a ReferenceError, this function is moved before its first call.
 const saveUsers = () => {
-    localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(users));
+    // This check ensures localStorage is only accessed in the browser.
+    if (typeof window !== 'undefined') {
+        localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(users));
+    }
 };
 
-const initializeDefaultUsers = () => {
-    if (users.length > 0) return;
-
-    const defaultFarmers = new Map<string, AuthUser>();
-    PRODUCE_LISTINGS.forEach(listing => {
-        if (!defaultFarmers.has(listing.farmerEmail)) {
-            const nameParts = listing.farmerName.split(' ');
-            const password = `${nameParts[0].toLowerCase()}123`;
-            defaultFarmers.set(listing.farmerEmail, {
-                id: `user_farmer_${defaultFarmers.size + 1}`,
-                name: listing.farmerName,
-                email: listing.farmerEmail,
-                phone: listing.farmerContact,
-                county: listing.location.split(', ')[1] || 'Unknown',
-                passwordHash: password, // Plain text for demo ONLY
-                ratingSum: 0,
-                ratingCount: 0,
-                avatarUrl: `https://picsum.photos/seed/${listing.farmerName}/200/200`
-            });
+const initializeUsers = () => {
+    // This function runs only in the browser, preventing build errors on the server.
+    const storedUsers = localStorage.getItem(USERS_STORAGE_KEY);
+    if (storedUsers) {
+        try {
+            users = JSON.parse(storedUsers);
+        } catch (e) {
+            console.error("Failed to parse users from storage", e);
+            users = [];
         }
-    });
+    }
 
-    users = Array.from(defaultFarmers.values());
-    saveUsers();
+    if (users.length === 0) {
+        const defaultFarmers = new Map<string, AuthUser>();
+        PRODUCE_LISTINGS.forEach(listing => {
+            if (!defaultFarmers.has(listing.farmerEmail)) {
+                const nameParts = listing.farmerName.split(' ');
+                const password = `${nameParts[0].toLowerCase()}123`;
+                defaultFarmers.set(listing.farmerEmail, {
+                    id: `user_farmer_${defaultFarmers.size + 1}`,
+                    name: listing.farmerName,
+                    email: listing.farmerEmail,
+                    phone: listing.farmerContact,
+                    county: listing.location.split(', ')[1] || 'Unknown',
+                    passwordHash: password, // Plain text for demo ONLY
+                    ratingSum: 0,
+                    ratingCount: 0,
+                    avatarUrl: `https://picsum.photos/seed/${listing.farmerName}/200/200`
+                });
+            }
+        });
+
+        users = Array.from(defaultFarmers.values());
+        saveUsers();
+    }
 };
 
-// Initialize default users if storage is empty
-initializeDefaultUsers();
+// Defer user initialization to run only in a browser environment.
+if (typeof window !== 'undefined') {
+    initializeUsers();
+}
+
 
 let currentUser: User | null = null;
 
@@ -173,6 +189,9 @@ export const logout = () => {
 };
 
 export const getCurrentUser = (): User | null => {
+    if (typeof window === 'undefined') {
+        return null;
+    }
     try {
         const persistedUser = localStorage.getItem(PERSISTENT_SESSION_KEY);
         if (persistedUser) {

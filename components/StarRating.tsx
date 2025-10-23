@@ -13,7 +13,9 @@ const StarRating: React.FC<StarRatingProps> = ({
   rating,
   totalStars = 5,
   interactive = false,
-  onRate = () => {},
+  // FIX: The default `onRate` function must accept a parameter to match the prop's type signature.
+  // This resolves the "Expected 0 arguments, but got 1" error when `onRate` is called without being passed as a prop.
+  onRate = (_rating) => {},
   className = ''
 }) => {
   const [hoverRating, setHoverRating] = useState(0);

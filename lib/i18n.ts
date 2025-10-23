@@ -5,6 +5,11 @@ let translations: Record<Language, Record<string, any>> | null = null;
 // --- State Management ---
 
 const getInitialLanguage = (): Language => {
+  // Guard against running in a non-browser environment (e.g., during a server-side build)
+  if (typeof window === 'undefined' || typeof navigator === 'undefined' || typeof localStorage === 'undefined') {
+    return 'en'; // Default language for server/build environment
+  }
+
   // Check for language preference in localStorage first
   const storedLang = localStorage.getItem('sokoFreshLang');
   if (storedLang === 'en' || storedLang === 'sw') {
