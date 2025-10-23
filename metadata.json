@@ -1,0 +1,7 @@
+{
+  "name": "Copy of SokoFresh – Smart Market Access for Smallholder Farmers",
+  "description": "SokoFresh is a web application that helps smallholder farmers in Kenya see real-time crop prices, connect directly with buyers, list produce for sale, and get advice from an AI-powered market assistant.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

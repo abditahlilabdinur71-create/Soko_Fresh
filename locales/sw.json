@@ -1,0 +1,241 @@
+{
+  "app": {
+    "title": "SokoFresh"
+  },
+  "common": {
+    "county": "Kaunti",
+    "search": "Tafuta..."
+  },
+  "navigation": {
+    "home": "Nyumbani",
+    "marketPrices": "Bei za Soko",
+    "listProduce": "Orodhesha Mazao",
+    "history": "Historia",
+    "assistant": "Msaidizi",
+    "myProfile": "Wasifu Wangu",
+    "settings": "Mipangilio",
+    "logout": "Toka",
+    "cart": "Kikapu"
+  },
+  "sidebar": {
+    "welcome": "Karibu, {{name}}!",
+    "countySuffix": "Kaunti",
+    "smsAlertsActive": "Arifa za SMS Zimetumika",
+    "developerSite": "Tovuti ya Msanidi"
+  },
+  "alerts": {
+    "profileUpdated": "Wasifu umesasishwa!",
+    "produceListed": "Mazao yako yameorodheshwa!",
+    "settingsSaved": "Mipangilio Imehifadhiwa!",
+    "smsDisabled": "Arifa za SMS hazitumiki.",
+    "smsEnabledFor": "Arifa za SMS zimetumika kwa:",
+    "buyerInterest": "Nia ya Mnunuzi",
+    "priceChangesFor": "Mabadiliko ya bei kwa: {{crops}}",
+    "smsEnabledNoSelection": "Arifa za SMS zimetumika, lakini hakuna arifa maalum iliyochaguliwa."
+  },
+  "auth": {
+    "loginTitle": "Karibu Tena!",
+    "registerTitle": "Fungua Akaunti Yako",
+    "emailOrPhoneLabel": "Barua Pepe au Nambari ya Simu",
+    "emailOrPhonePlaceholder": "k.m., mkulima@soko.com au 0712345678",
+    "emailLabel": "Anwani ya Barua Pepe",
+    "emailPlaceholder": "k.m., mkulima@soko.com",
+    "namePlaceholder": "k.m., Mkulima John",
+    "passwordLabel": "Nenosiri",
+    "confirmPasswordLabel": "Thibitisha Nenosiri",
+    "loginButton": "Ingia",
+    "registerButton": "Sajili",
+    "switchToRegister": "Huna akaunti? Jisajili",
+    "switchToLogin": "Tayari una akaunti? Ingia",
+    "errorInvalidCredentials": "Barua pepe/simu au nenosiri si sahihi.",
+    "errorEmailInUse": "Akaunti yenye barua pepe hii tayari ipo.",
+    "errorPhoneInUse": "Akaunti yenye nambari hii ya simu tayari ipo.",
+    "errorPasswordsDoNotMatch": "Nenosiri ulizoingiza hazifanani.",
+    "errorGeneric": "Hitilafu imetokea. Tafadhali jaribu tena.",
+    "orContinueWith": "Au endelea na",
+    "loginWithGoogle": "Ingia na Google",
+    "loginAsGuest": "Endelea kama Mgeni",
+    "forgotPasswordLink": "Umesahau Nenosiri?",
+    "resetPasswordTitle": "Weka Upya Nenosiri Lako",
+    "resetPasswordInstruction": "Weka anwani yako ya barua pepe na tutakutumia kiungo cha kuweka upya nenosiri lako.",
+    "sendResetLinkButton": "Tuma Kiungo cha Kuweka Upya",
+    "resetPasswordConfirmation": "Ikiwa akaunti yenye barua pepe hiyo ipo, kiungo cha kuweka upya nenosiri kimetumwa.",
+    "backToLogin": "Rudi Kuingia",
+    "showPassword": "Onyesha nenosiri",
+    "hidePassword": "Ficha nenosiri",
+    "rememberMe": "Nikumbuke",
+    "testOnPhoneTitle": "Jaribu Kwenye Simu Yako",
+    "testOnPhoneDescription": "Changanua msimbo huu wa QR na kamera ya simu yako ili kufungua SokoFresh kwenye kivinjari chako cha rununu."
+  },
+  "dashboard": {
+    "title": "Mazao Yanayopatikana",
+    "filterByCounty": "Chuja kwa Kaunti",
+    "filterByTown": "Chuja kwa Mji",
+    "allCounties": "Kaunti Zote",
+    "allTowns": "Miji Yote",
+    "noListings": "Hakuna mazao yanayolingana na vigezo vyako.",
+    "card": {
+      "availableSuffix": "inapatikana",
+      "availableFrom": "Inapatikana kutoka:",
+      "messageFarmer": "Tuma Ujumbe kwa Mkulima",
+      "callFarmer": "Piga simu {{name}}",
+      "addToCart": "Weka Kwenye Kikapu"
+    }
+  },
+  "marketPrices": {
+    "title": "Bei za Soko",
+    "priceTrends": "Mwenendo wa Bei za {{cropName}} ({{unit}})",
+    "nairobiAvg": "Wastani Nairobi",
+    "kisumuAvg": "Wastani Kisumu",
+    "eldoretAvg": "Wastani Eldoret",
+    "selectCounties": "Chagua Kaunti",
+    "searchCounty": "Tafuta kaunti...",
+    "showingCounties": "Inaonyesha data kwa kaunti {{count}}",
+    "averageSummary": "Muhtasari wa Bei za Wastani",
+    "averageFor": "Wastani wa {{county}}",
+    "noCountySelected": "Tafadhali chagua kaunti moja au zaidi kuona data ya bei."
+  },
+  "listProduceForm": {
+    "title": "Orodhesha Mazao Yako",
+    "cropName": "Jina la Zao",
+    "cropNamePlaceholder": "k.m., Mahindi, Nyanya",
+    "buyerCompany": "Jina la Kampuni ya Mnunuzi (Si lazima)",
+    "buyerCompanyPlaceholder": "k.m., Nairobi Millers Ltd.",
+    "quantity": "Kiasi",
+    "quantityPlaceholder": "k.m., Magunia 50",
+    "price": "Bei",
+    "pricePlaceholder": "k.m., KES 3,200 / Gunia",
+    "county": "Kaunti",
+    "selectCounty": "Chagua kaunti",
+    "town": "Mji",
+    "selectTown": "Chagua mji",
+    "uploadPhoto": "Pakia Picha",
+    "uploadFile": "Pakia faili",
+    "dragAndDrop": "au buruta na uangushe",
+    "fileTypes": "PNG, JPG, GIF hadi 10MB",
+    "submitButton": "Orodhesha Mazao"
+  },
+  "transactionsHistory": {
+    "title": "Historia ya Miamala",
+    "searchPlaceholder": "Tafuta kwa zao au mnunuzi...",
+    "noTransactions": "Hakuna miamala inayolingana na utafutaji wako.",
+    "headers": {
+      "transactionId": "Nambari ya Muamala",
+      "crop": "Zao",
+      "buyer": "Mnunuzi",
+      "amount": "Kiasi",
+      "paymentMethod": "Njia ya Malipo",
+      "date": "Tarehe",
+      "status": "Hali",
+      "rating": "Tathmini"
+    }
+  },
+  "marketAssistant": {
+    "title": "Msaidizi wa Soko",
+    "tagline": "Mshauri wako wa kilimo anayetumia AI.",
+    "initialMessage": "Habari! Mimi ni Msaidizi wako wa Soko wa AI. Niulize chochote kuhusu bei za mazao, udhibiti wa wadudu, au nyakati bora za kupanda. Unaweza pia kuomba video fupi ya maelekezo kwa kubonyeza ikoni ya video.",
+    "errorMessage": "Samahani, nina shida ya kuunganisha. Tafadhali jaribu tena baadaye.",
+    "inputPlaceholder": "Uliza swali...",
+    "sourcesTitle": "Vyanzo kutoka Google Maps",
+    "geolocation": {
+      "error": "Imeshindwa kupata eneo lako. Majibu huenda yasiwe muhimu sana.",
+      "notSupported": "Kipengele cha eneo hakitumiki kwenye kivinjari chako."
+    },
+    "video": {
+      "inputPlaceholder": "Eleza video unayotaka kutengeneza...",
+      "toggleVideo": "Washa/Zima Hali ya Kutengeneza Video",
+      "generating": "Inatengeneza video ya '{{prompt}}'...",
+      "generated": "Hii hapa video yako ya '{{prompt}}'.",
+      "pleaseWait": "Hii inaweza kuchukua dakika chache. Tafadhali subiri.",
+      "browserNotSupported": "Kivinjari chako hakiauni lebo ya video."
+    },
+    "apiKey": {
+      "title": "Ufunguo wa API Unahitajika kwa Kutengeneza Video",
+      "description": "Ili kutengeneza video, unahitaji kuchagua ufunguo wa API. Hiki ni kipengele cha kulipia na kinaweza kuwa na gharama.",
+      "learnMore": "Jifunze zaidi kuhusu malipo.",
+      "selectKeyButton": "Chagua Ufunguo wa API"
+    },
+    "gemini": {
+      "systemInstruction": "Wewe ni mshauri mtaalamu wa kilimo kwa wakulima wadogo nchini Kenya. Lugha yako ni ya kusaidia, kutia moyo, na rahisi kuelewa. Toa jibu fupi na la vitendo kwa swali lifuatalo.",
+      "unavailableError": "Msaidizi wa Soko wa AI hapatikani kwa sasa. Tafadhali hakikisha API key imewekwa.",
+      "genericError": "Samahani, sikuweza kupata ushauri kwa sasa. Tafadhali jaribu tena baadaye.",
+      "apiError": "Samahani, nimepata hitilafu: {{message}}",
+      "apiKeyMissing": "Ufunguo wa API haujawekwa kwa ajili ya kutengeneza video.",
+      "videoGenerationFailed": "Imeshindwa kutengeneza video. Operesheni haikurudisha kiungo halali cha kupakua."
+    }
+  },
+  "settings": {
+    "title": "Mipangilio",
+    "smsNotifications": "Arifa za SMS",
+    "smsDescription": "Jisajili kupokea arifa za SMS kwenye nambari yako ya simu iliyosajiliwa. Gharama za kawaida za ujumbe zinaweza kutozwa.",
+    "enableSmsService": "Washa Huduma ya SMS",
+    "buyerAlerts": "Arifa za Mnunuzi",
+    "notifyBuyerInterest": "Nijulishe kuhusu nia ya mnunuzi",
+    "priceAlerts": "Arifa za Bei",
+    "priceAlertsDescription": "Chagua mazao unayotaka kupokea masasisho ya bei za soko.",
+    "saveButton": "Hifadhi Mipangilio"
+  },
+  "profile": {
+    "title": "Wasifu Wangu",
+    "countySuffix": "Kaunti",
+    "fullName": "Jina Kamili",
+    "phoneNumber": "Nambari ya Simu",
+    "editButton": "Hariri Wasifu",
+    "saveButton": "Hifadhi Mabadiliko",
+    "cancelButton": "Ghairi",
+    "selectCounty": "Chagua kaunti",
+    "changePhoto": "Badilisha Picha",
+    "ratingDetails": "kutoka tathmini {{count}}",
+    "noRatingsYet": "Hakuna tathmini bado"
+  },
+  "messageModal": {
+    "title": "Tuma Ujumbe kwa {{farmerName}}",
+    "inputPlaceholder": "Andika ujumbe wako hapa...",
+    "sendButton": "Tuma",
+    "closeButton": "Funga",
+    "initialResponse": "Habari! Asante kwa kupendezwa na {{crop}}. Nikusaidieje leo?",
+    "yourMessage": "Wewe",
+    "statusOnline": "Mtandaoni",
+    "lastSeen": "Alionekana mara ya mwisho {{time}}"
+  },
+  "cropDetails": {
+    "title": "Maelezo ya Zao",
+    "listedBy": "Limeorodheshwa na {{name}}",
+    "backButton": "Rudi kwenye Dashibodi",
+    "history": "Historia na Asili",
+    "commonPests": "Wadudu na Magonjwa ya Kawaida",
+    "optimalConditions": "Hali Bora za Ukuaji",
+    "noDetails": "Maelezo ya kina ya zao hili bado hayapatikani.",
+    "nutritionalValue": "Thamani ya Lishe",
+    "marketInfo": "Taarifa za Soko na Matumizi",
+    "harvestingTips": "Vidokezo vya Uvunaji na Uhifadhi",
+    "varieties": "Aina Maarufu nchini Kenya"
+  },
+  "share": {
+    "button": "Sambaza Programu",
+    "modalTitle": "Sambaza SokoFresh",
+    "text": "Angalia SokoFresh – programu mahiri ya ufikiaji wa soko kwa wakulima wadogo nchini Kenya!",
+    "facebook": "Sambaza Facebook",
+    "twitter": "Sambaza X",
+    "whatsapp": "Sambaza WhatsApp",
+    "linkedin": "Sambaza LinkedIn",
+    "copyLink": "Nakili Kiungo",
+    "copied": "Imenakiliwa!"
+  },
+  "cart": {
+    "title": "Kikapu chako cha Manunuzi",
+    "empty": "Kikapu chako ni kitupu.",
+    "orderSummary": "Muhtasari wa Agizo",
+    "subtotal": "Jumla ndogo",
+    "shipping": "Usafirishaji",
+    "shippingValue": "Itahesabiwa wakati wa malipo",
+    "tax": "Kodi",
+    "taxValue": "Itahesabiwa wakati wa malipo",
+    "total": "Jumla Kuu",
+    "checkoutButton": "Endelea Kulipa",
+    "checkoutSuccess": "Malipo yamefanikiwa! Asante kwa agizo lako."
+  },
+  "toasts": {
+    "itemAddedToCart": "{{crop}} imeongezwa kwenye kikapu chako!"
+  }
+}

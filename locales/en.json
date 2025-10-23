@@ -1,0 +1,241 @@
+{
+  "app": {
+    "title": "SokoFresh"
+  },
+  "common": {
+    "county": "County",
+    "search": "Search..."
+  },
+  "navigation": {
+    "home": "Home",
+    "marketPrices": "Market Prices",
+    "listProduce": "List Produce",
+    "history": "History",
+    "assistant": "Assistant",
+    "myProfile": "My Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "cart": "Cart"
+  },
+  "sidebar": {
+    "welcome": "Welcome, {{name}}!",
+    "countySuffix": "County",
+    "smsAlertsActive": "SMS Alerts Active",
+    "developerSite": "Developer Site"
+  },
+  "alerts": {
+    "profileUpdated": "Profile updated successfully!",
+    "produceListed": "Your produce has been listed successfully!",
+    "settingsSaved": "Settings Saved!",
+    "smsDisabled": "SMS alerts are disabled.",
+    "smsEnabledFor": "SMS alerts enabled for:",
+    "buyerInterest": "Buyer Interest",
+    "priceChangesFor": "Price changes for: {{crops}}",
+    "smsEnabledNoSelection": "SMS alerts are enabled, but no specific notifications are selected."
+  },
+  "auth": {
+    "loginTitle": "Welcome Back!",
+    "registerTitle": "Create Your Account",
+    "emailOrPhoneLabel": "Email or Phone Number",
+    "emailOrPhonePlaceholder": "e.g., farmer@soko.com or 0712345678",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "e.g., farmer@soko.com",
+    "namePlaceholder": "e.g., Farmer John",
+    "passwordLabel": "Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "loginButton": "Log In",
+    "registerButton": "Register",
+    "switchToRegister": "Don't have an account? Sign up",
+    "switchToLogin": "Already have an account? Log in",
+    "errorInvalidCredentials": "Invalid email/phone or password.",
+    "errorEmailInUse": "An account with this email already exists.",
+    "errorPhoneInUse": "An account with this phone number already exists.",
+    "errorPasswordsDoNotMatch": "The passwords you entered do not match.",
+    "errorGeneric": "An unexpected error occurred. Please try again.",
+    "orContinueWith": "Or continue with",
+    "loginWithGoogle": "Log in with Google",
+    "loginAsGuest": "Continue as Guest",
+    "forgotPasswordLink": "Forgot Password?",
+    "resetPasswordTitle": "Reset Your Password",
+    "resetPasswordInstruction": "Enter your email address and we will send you a link to reset your password.",
+    "sendResetLinkButton": "Send Reset Link",
+    "resetPasswordConfirmation": "If an account with that email exists, a password reset link has been sent.",
+    "backToLogin": "Back to Login",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "rememberMe": "Remember Me",
+    "testOnPhoneTitle": "Test on Your Phone",
+    "testOnPhoneDescription": "Scan this QR code with your phone's camera to open SokoFresh in your mobile browser."
+  },
+  "dashboard": {
+    "title": "Available Produce",
+    "filterByCounty": "Filter by County",
+    "filterByTown": "Filter by Town",
+    "allCounties": "All Counties",
+    "allTowns": "All Towns",
+    "noListings": "No produce listings match your filters.",
+    "card": {
+      "availableSuffix": "available",
+      "availableFrom": "Available from:",
+      "messageFarmer": "Message Farmer",
+      "callFarmer": "Call {{name}}",
+      "addToCart": "Add to Cart"
+    }
+  },
+  "marketPrices": {
+    "title": "Market Prices",
+    "priceTrends": "{{cropName}} Price Trends ({{unit}})",
+    "nairobiAvg": "Nairobi Avg.",
+    "kisumuAvg": "Kisumu Avg.",
+    "eldoretAvg": "Eldoret Avg.",
+    "selectCounties": "Select Counties",
+    "searchCounty": "Search county...",
+    "showingCounties": "Showing data for {{count}} counties",
+    "averageSummary": "Average Price Summary",
+    "averageFor": "Avg. for {{county}}",
+    "noCountySelected": "Please select one or more counties to view price data."
+  },
+  "listProduceForm": {
+    "title": "List Your Produce for Sale",
+    "cropName": "Crop Name",
+    "cropNamePlaceholder": "e.g., Maize, Tomatoes",
+    "buyerCompany": "Buyer Company Name (Optional)",
+    "buyerCompanyPlaceholder": "e.g., Nairobi Millers Ltd.",
+    "quantity": "Quantity",
+    "quantityPlaceholder": "e.g., 50 Bags",
+    "price": "Price",
+    "pricePlaceholder": "e.g., KES 3,200 / Bag",
+    "county": "County",
+    "selectCounty": "Select a county",
+    "town": "Town",
+    "selectTown": "Select a town",
+    "uploadPhoto": "Upload Photo",
+    "uploadFile": "Upload a file",
+    "dragAndDrop": "or drag and drop",
+    "fileTypes": "PNG, JPG, GIF up to 10MB",
+    "submitButton": "List My Produce"
+  },
+  "transactionsHistory": {
+    "title": "Transaction History",
+    "searchPlaceholder": "Search by crop or buyer...",
+    "noTransactions": "No transactions match your search.",
+    "headers": {
+      "transactionId": "Transaction ID",
+      "crop": "Crop",
+      "buyer": "Buyer",
+      "amount": "Amount",
+      "paymentMethod": "Payment Method",
+      "date": "Date",
+      "status": "Status",
+      "rating": "Rating"
+    }
+  },
+  "marketAssistant": {
+    "title": "Market Assistant",
+    "tagline": "Your AI-powered agricultural advisor.",
+    "initialMessage": "Hello! I am your AI Market Assistant. Ask me anything about crop prices, pest control, or best planting times. You can also request a short instructional video by toggling the video icon.",
+    "errorMessage": "Sorry, I am having trouble connecting. Please try again later.",
+    "inputPlaceholder": "Ask a question...",
+    "sourcesTitle": "Sources from Google Maps",
+    "geolocation": {
+      "error": "Could not get your location. Answers may be less relevant.",
+      "notSupported": "Geolocation is not supported by your browser."
+    },
+    "video": {
+      "inputPlaceholder": "Describe the video you want to generate...",
+      "toggleVideo": "Toggle Video Generation Mode",
+      "generating": "Generating a video of '{{prompt}}'...",
+      "generated": "Here's your video of '{{prompt}}'.",
+      "pleaseWait": "This may take a few minutes. Please wait.",
+      "browserNotSupported": "Your browser does not support the video tag."
+    },
+    "apiKey": {
+      "title": "API Key Required for Video Generation",
+      "description": "To generate videos, you need to select an API key. This is a premium feature and may incur costs.",
+      "learnMore": "Learn more about billing.",
+      "selectKeyButton": "Select API Key"
+    },
+    "gemini": {
+      "systemInstruction": "You are an expert agricultural advisor for smallholder farmers in Kenya. Your tone is helpful, encouraging, and easy to understand. Provide a concise, practical answer to the following question.",
+      "unavailableError": "The AI Market Assistant is currently unavailable. Please ensure the API key is configured.",
+      "genericError": "Sorry, I couldn't get advice at the moment. Please try again later.",
+      "apiError": "Sorry, I encountered an error: {{message}}",
+      "apiKeyMissing": "API Key is not configured for video generation.",
+      "videoGenerationFailed": "Failed to generate video. The operation did not return a valid download link."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "smsNotifications": "SMS Notifications",
+    "smsDescription": "Opt-in to receive SMS notifications on your registered phone number. Standard message rates may apply.",
+    "enableSmsService": "Enable SMS Service",
+    "buyerAlerts": "Buyer Alerts",
+    "notifyBuyerInterest": "Notify on Buyer Interest",
+    "priceAlerts": "Price Alerts",
+    "priceAlertsDescription": "Select which crops you want to receive market price updates for.",
+    "saveButton": "Save Settings"
+  },
+  "profile": {
+    "title": "My Profile",
+    "countySuffix": "County",
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number",
+    "editButton": "Edit Profile",
+    "saveButton": "Save Changes",
+    "cancelButton": "Cancel",
+    "selectCounty": "Select a county",
+    "changePhoto": "Change Photo",
+    "ratingDetails": "from {{count}} ratings",
+    "noRatingsYet": "No ratings yet"
+  },
+  "messageModal": {
+    "title": "Message {{farmerName}}",
+    "inputPlaceholder": "Type your message here...",
+    "sendButton": "Send",
+    "closeButton": "Close",
+    "initialResponse": "Hello! Thanks for your interest in the {{crop}}. How can I help you today?",
+    "yourMessage": "You",
+    "statusOnline": "Online",
+    "lastSeen": "Last seen {{time}}"
+  },
+  "cropDetails": {
+    "title": "Crop Information",
+    "listedBy": "Listed by {{name}}",
+    "backButton": "Back to Dashboard",
+    "history": "History & Origin",
+    "commonPests": "Common Pests & Diseases",
+    "optimalConditions": "Optimal Growing Conditions",
+    "noDetails": "Detailed information for this crop is not yet available.",
+    "nutritionalValue": "Nutritional Value",
+    "marketInfo": "Market Information & Uses",
+    "harvestingTips": "Harvesting & Storage Tips",
+    "varieties": "Popular Varieties in Kenya"
+  },
+  "share": {
+    "button": "Share App",
+    "modalTitle": "Share SokoFresh",
+    "text": "Check out SokoFresh – a smart market access app for smallholder farmers in Kenya!",
+    "facebook": "Share on Facebook",
+    "twitter": "Share on X",
+    "whatsapp": "Share on WhatsApp",
+    "linkedin": "Share on LinkedIn",
+    "copyLink": "Copy Link",
+    "copied": "Copied!"
+  },
+  "cart": {
+    "title": "Your Shopping Cart",
+    "empty": "Your cart is empty.",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingValue": "Calculated at checkout",
+    "tax": "Tax",
+    "taxValue": "Calculated at checkout",
+    "total": "Total",
+    "checkoutButton": "Proceed to Checkout",
+    "checkoutSuccess": "Checkout successful! Thank you for your order."
+  },
+  "toasts": {
+    "itemAddedToCart": "{{crop}} added to your cart!"
+  }
+}
